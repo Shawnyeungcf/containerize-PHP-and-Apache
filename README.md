@@ -43,12 +43,12 @@ apache    | [Sun Aug 29 06:33:47.758537 2021] [core:notice] [pid 1:tid 139668005
 docker-compose down
 ```
 
-2. And start the container servers again with"
+2. And start the container servers again with
 
 ```
 docker-compose up
 ```
 
-# Thanks to
+### Thanks to
 
 https://github.com/mzazon/php-apache-mysql-containerized
