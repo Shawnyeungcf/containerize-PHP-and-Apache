@@ -26,6 +26,20 @@ Hello World!
 Testing php message!
 ```
 
+### Helpers
+
+1. If the html files not update, run the command below to stop the container servers.
+
+```
+docker-compose down
+```
+
+2. And start the container servers again with"
+
+```
+docker-compose up
+```
+
 You should see below messages if everything goes well.
 
 ```
