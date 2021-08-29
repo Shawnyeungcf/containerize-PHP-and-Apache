@@ -1,0 +1,11 @@
+# Able to set the Apache version
+ARG APACHE_VERSION=""
+# Image from docker hub
+FROM httpd:${APACHE_VERSION:+${APACHE_VERSION}-}alpine
+# Update system
+RUN apk upgrade;
+
+# Copy apache vhost file to proxy php requests to php-fpm container
+COPY apache.conf /usr/local/apache2/conf/apache.conf
+RUN echo "Include /usr/local/apache2/conf/apache.conf" \
+  >> /usr/local/apache2/conf/httpd.conf
