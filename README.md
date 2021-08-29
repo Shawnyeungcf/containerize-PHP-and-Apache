@@ -26,6 +26,15 @@ Hello World!
 Testing php message!
 ```
 
+You should see below messages if everything goes well.
+
+```
+php       | [29-Aug-2021 06:33:47] NOTICE: fpm is running, pid 1
+php       | [29-Aug-2021 06:33:47] NOTICE: ready to handle connections
+apache    | [Sun Aug 29 06:33:47.758447 2021] [mpm_event:notice] [pid 1:tid 139668005006152] AH00489: Apache/2.4.32 (Unix) configured -- resuming normal operations
+apache    | [Sun Aug 29 06:33:47.758537 2021] [core:notice] [pid 1:tid 139668005006152] AH00094: Command line: 'httpd -D FOREGROUND'
+```
+
 ### Helpers
 
 1. If the html files not update, run the command below to stop the container servers.
@@ -38,15 +47,6 @@ docker-compose down
 
 ```
 docker-compose up
-```
-
-You should see below messages if everything goes well.
-
-```
-php       | [29-Aug-2021 06:33:47] NOTICE: fpm is running, pid 1
-php       | [29-Aug-2021 06:33:47] NOTICE: ready to handle connections
-apache    | [Sun Aug 29 06:33:47.758447 2021] [mpm_event:notice] [pid 1:tid 139668005006152] AH00489: Apache/2.4.32 (Unix) configured -- resuming normal operations
-apache    | [Sun Aug 29 06:33:47.758537 2021] [core:notice] [pid 1:tid 139668005006152] AH00094: Command line: 'httpd -D FOREGROUND'
 ```
 
 # Thanks to
